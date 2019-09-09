@@ -169,7 +169,7 @@ footer {
 }
 
 
-				/***** SERVICES CSS STARTS HERE *****/
+				/* **** SERVICES CSS STARTS HERE ****
 
 .services-top-content {
 	margin: 25px 0;
@@ -186,13 +186,13 @@ div.services-title {
 
 				/***** MIDDLE SERVICES STYLES *****/
 
-.middle-content {
+/* .middle-content {
 	display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 	/* margin: 25px 0; */
 	/* border: 1px solid gray; */
-}
+/* }
 
 .middle-content div {
 	height: 33%;
@@ -211,18 +211,18 @@ div.services-title {
 	border-radius: 5px;
 	margin-top: 15px;
 	border: 1px solid black;
-}
+} */
 
 				/***** BOTTOM SERVICES STYLES *****/
 
-.services-bottom-content {
+/* .services-bottom-content {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding-top: 15px;
 	width: 100%;
 	/* border: 1px solid green; */
-}
+/* }
 
 div.bottom-text {
 	display: flex;
@@ -246,9 +246,22 @@ ul li {
 	display: flex;
     flex-flow: row-reverse nowrap;
 	/* border: 2px solid yellow; */
+/*} */
+
+                /***** ABOUT CSS STARTS HERE *****/
+                
+
+
+                /***** MEDIA QUERIES *****/
+
+/*** TABLET ***/
+@media (max-width: 800px) {
+    .cta img {
+        display: none;
+    }
 }
 
-				/***** ABOUT CSS STARTS HERE *****/
+/*** MOBILE ***/
+@media (max-width: 500px) {
 
-
-
+}
