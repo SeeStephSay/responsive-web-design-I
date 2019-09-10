@@ -66,7 +66,8 @@ h1, h2, h3, h4, h5 {
                 /* MY CODE */
 
 .container {
-	width: 876px;
+    width: 100%;
+	max-width: 876px;
 }
                 /***** NAV/HEADER STYLES *****/
 nav {
@@ -130,7 +131,7 @@ header {
 }
 
 .top-content {
-	width: 876px;
+	width: 100%;
 }
 
 .top-content div {
@@ -148,14 +149,13 @@ header {
 				/***** BOTTOM STYLES *****/
 
 .bottom-content {
-	width: 876px;
+	width: 100%;
 	display: flex;
 	margin-bottom: 30px;
 }
 
 .bottom-content div {
 	width: 33%;
-	text-align: justify;
 	padding: 10px;
 }
 
@@ -164,7 +164,7 @@ header {
 }
 
 body { /* centers the website */
-	width: 876px;
+	max-width: 876px;
 	margin: 0 auto;
 }
 
@@ -263,12 +263,15 @@ ul li {
 /*** TABLET ***/
 @media (max-width: 800px) {
     .container {
-        overflow: hidden;
+        margin: auto;
+        max-width: 800px;
+        width: 95%;
     }
     nav {
         /* border: 1px dashed green; */
         display: flex;
         flex-direction: column-reverse;
+        flex-wrap: wrap;
     }
     nav a {
         width: 100%;
@@ -282,12 +285,67 @@ ul li {
     .cta img {
         display: none;
     }
-    footer {
-        overflow: hidden;
+    main {
+        width: 100%;
+    }
+    img.middle-img {
+        max-width: 100%;
+    }
+    .top-content, .bottom-content {
+        display: flex;
+        flex-flow: row wrap;
     }
 }
 
 /*** MOBILE ***/
 @media (max-width: 500px) {
-
+    .container {
+        margin: auto;
+        width: 95%;
+        max-width: 500px;
+    }
+    header {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        border: 1px solid gray;
+    }
+    nav {
+        width: 95%;
+        /* display: flex; */
+        flex-direction: column-reverse;
+    }
+    nav a {
+        color: #BEC1C2;
+        width: 90vw;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin: 15px; */
+        border-top: 1px solid gray; 
+    }
+    img.logo {
+        /* justify-content: center; */
+    }
+    #contact {
+        /* padding-bottom: 15px; */
+        border-bottom: 1px solid gray;
+    }
+    
+    main {
+        width: 100%;
+    }
+    .top-content, .bottom-content {
+        flex-direction: column;
+        width: 100%;
+    }
+    .text-content {
+        width: 100%;
+    }
+    
+    /* img.middle-img {
+        width: 50%;
+        overflow: hidden;
+    } */
 }
