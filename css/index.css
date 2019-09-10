@@ -267,8 +267,12 @@ ul li {
         max-width: 800px;
         width: 95%;
     }
+    header {
+        width: 100%;
+    }
     nav {
         /* border: 1px dashed green; */
+        
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
@@ -308,7 +312,7 @@ ul li {
         display: flex;
         width: 100%;
         justify-content: center;
-        border: 1px solid gray;
+        /* border: 1px solid gray; */
     }
     nav {
         width: 95%;
@@ -336,7 +340,7 @@ ul li {
     main {
         width: 100%;
     }
-    .top-content, .bottom-content {
+    .top-content div, .bottom-content div {
         flex-direction: column;
         width: 100%;
     }
